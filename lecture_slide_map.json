@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-04-27T15:40:06.965Z",
+  "note": "Relative slide-path metadata only; PDF files are not included in the cloud branch.",
+  "videos": [
+    {
+      "video": "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/2026_FW51_Systematische Beobachtung - Selbststudium.mp4",
+      "related_slides": [
+        {
+          "path": "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/2026_FW51_Systematische Beobachtung - Selbststudium.pdf",
+          "confidence": 1
+        },
+        {
+          "path": "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/2026_FW51_Selbststudiumsauftrag 19._26.02.26.pdf",
+          "confidence": 0.809
+        },
+        {
+          "path": "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/2026_FW51_Skript Grundlagen der Beobachtung.pdf",
+          "confidence": 0.722
+        },
+        {
+          "path": "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/Helmke,Renkl_1992_MAI.pdf",
+          "confidence": 0.691
+        },
+        {
+          "path": "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/Sahli Lozano,Neff_2015_Soziale Integration und offener Unterricht in integrativen Schulklassen.pdf",
+          "confidence": 0.587
+        }
+      ]
+    },
+    {
+      "video": "V2_ Aufmerksamkeit und ADHS/2026 03 12 PKE/PKE_2026_51_V2_2_Aufmerksamkeit_KB_DGE.mp4",
+      "related_slides": [
+        {
+          "path": "V2_ Aufmerksamkeit und ADHS/2026 03 12 PKE/PKE_2026_51_V2_2_Aufmerksamkeit_KB_DGE.pdf",
+          "confidence": 1
+        },
+        {
+          "path": "V2_ Aufmerksamkeit und ADHS/2026 03 12 PKE/Aufmerksamkeit_KB_Transkript.pdf",
+          "confidence": 0.662
+        },
+        {
+          "path": "V2_ Aufmerksamkeit und ADHS/2026 03 19 PKE/PKE_2026_51__V2_3_Aufmerksamkeit und KB_DGE_Handout.pdf",
+          "confidence": 0.533
+        },
+        {
+          "path": "V2_ Aufmerksamkeit und ADHS/2026 03 19 PKE/PKE_2026_51_V2_3_Aufmerksamkeit und KB_DGE_Hypothesen und Handlungsmoeglichkeiten.pdf",
+          "confidence": 0.479
+        },
+        {
+          "path": "V2_ Aufmerksamkeit und ADHS/2026 03 05 - Selbststudium Grundlagen ADHS und Exekutive Funktionen (PLV und PKE)/1 Grundlagen Aufmerksamkeit und ADHS/1 Aufmerksamkeit und ADHS Grundlagen 2026.pdf",
+          "confidence": 0.394
+        }
+      ]
+    },
+    {
+      "video": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Folienpräsentation für das Selbststudium/Perspektiven auf Aggressionen FW51_V3_2026_Teil 1.mp4",
+      "related_slides": [
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Folienpräsentation für das Selbststudium/Perspektiven auf Aggressionen FW51_V3_2026_def.pdf",
+          "confidence": 0.847
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Arbeitsauftrag 16.4.26 Einstieg Perspektiven auf Aggressionen.pdf",
+          "confidence": 0.463
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Diskussionsergebnisse Zoomseminar Jasmin 2026.pdf",
+          "confidence": 0.364
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Diskussionsergebnisse Zoomseminar Melanie 2026.pdf",
+          "confidence": 0.364
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Diskussionsergebnisse Zoomseminar Xavier 2026.pdf",
+          "confidence": 0.364
+        }
+      ]
+    },
+    {
+      "video": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Folienpräsentation für das Selbststudium/Perspektiven auf Aggressionen FW51_V3_2026_Teil 2.mp4",
+      "related_slides": [
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Folienpräsentation für das Selbststudium/Perspektiven auf Aggressionen FW51_V3_2026_def.pdf",
+          "confidence": 0.847
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Arbeitsauftrag 16.4.26 Einstieg Perspektiven auf Aggressionen.pdf",
+          "confidence": 0.463
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Diskussionsergebnisse Zoomseminar Jasmin 2026.pdf",
+          "confidence": 0.364
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Diskussionsergebnisse Zoomseminar Melanie 2026.pdf",
+          "confidence": 0.364
+        },
+        {
+          "path": "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Diskussionsergebnisse Zoomseminar Xavier 2026.pdf",
+          "confidence": 0.364
+        }
+      ]
+    }
+  ]
+}

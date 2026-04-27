@@ -1,0 +1,4 @@
+node_modules/
+.env
+.transcribe_work/
+*.log

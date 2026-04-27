@@ -1,0 +1,12 @@
+{
+  "name": "ilias-lecture-transcripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "transcribe:dry-run": "node scripts/transcribe-lectures.mjs --dry-run",
+    "transcribe": "node scripts/transcribe-lectures.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

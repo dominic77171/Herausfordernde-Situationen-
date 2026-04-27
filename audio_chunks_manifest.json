@@ -1,0 +1,175 @@
+﻿{
+    "created_at":  "2026-04-27T18:29:25.9399217Z",
+    "segment_seconds":  600,
+    "audio_format":  "mp3 mono 16kHz 48kbps",
+    "videos":  [
+                   {
+                       "video":  "V1_ Unterrichtssituationen systematisch beobachten/19.02.2026 und 26.02.2026 - Selbststudium (Un-)Systematische Beobachtung/2026_FW51_Systematische Beobachtung - Selbststudium.mp4",
+                       "duration_seconds":  3734.364218,
+                       "chunks":  [
+                                      {
+                                          "index":  0,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0000.mp3",
+                                          "start":  0,
+                                          "end":  600
+                                      },
+                                      {
+                                          "index":  1,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0001.mp3",
+                                          "start":  600,
+                                          "end":  1200
+                                      },
+                                      {
+                                          "index":  2,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0002.mp3",
+                                          "start":  1200,
+                                          "end":  1800
+                                      },
+                                      {
+                                          "index":  3,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0003.mp3",
+                                          "start":  1800,
+                                          "end":  2400
+                                      },
+                                      {
+                                          "index":  4,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0004.mp3",
+                                          "start":  2400,
+                                          "end":  3000
+                                      },
+                                      {
+                                          "index":  5,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0005.mp3",
+                                          "start":  3000,
+                                          "end":  3600
+                                      },
+                                      {
+                                          "index":  6,
+                                          "file":  "audio_chunks/8cb002acfc30/chunk_0006.mp3",
+                                          "start":  3600,
+                                          "end":  3734.364218
+                                      }
+                                  ]
+                   },
+                   {
+                       "video":  "V2_ Aufmerksamkeit und ADHS/2026 03 12 PKE/PKE_2026_51_V2_2_Aufmerksamkeit_KB_DGE.mp4",
+                       "duration_seconds":  4087.975578,
+                       "chunks":  [
+                                      {
+                                          "index":  0,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0000.mp3",
+                                          "start":  0,
+                                          "end":  600
+                                      },
+                                      {
+                                          "index":  1,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0001.mp3",
+                                          "start":  600,
+                                          "end":  1200
+                                      },
+                                      {
+                                          "index":  2,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0002.mp3",
+                                          "start":  1200,
+                                          "end":  1800
+                                      },
+                                      {
+                                          "index":  3,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0003.mp3",
+                                          "start":  1800,
+                                          "end":  2400
+                                      },
+                                      {
+                                          "index":  4,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0004.mp3",
+                                          "start":  2400,
+                                          "end":  3000
+                                      },
+                                      {
+                                          "index":  5,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0005.mp3",
+                                          "start":  3000,
+                                          "end":  3600
+                                      },
+                                      {
+                                          "index":  6,
+                                          "file":  "audio_chunks/94a072cc427e/chunk_0006.mp3",
+                                          "start":  3600,
+                                          "end":  4087.975578
+                                      }
+                                  ]
+                   },
+                   {
+                       "video":  "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Folienpräsentation für das Selbststudium/Perspektiven auf Aggressionen FW51_V3_2026_Teil 1.mp4",
+                       "duration_seconds":  2566.146667,
+                       "chunks":  [
+                                      {
+                                          "index":  0,
+                                          "file":  "audio_chunks/6b6383cef460/chunk_0000.mp3",
+                                          "start":  0,
+                                          "end":  600
+                                      },
+                                      {
+                                          "index":  1,
+                                          "file":  "audio_chunks/6b6383cef460/chunk_0001.mp3",
+                                          "start":  600,
+                                          "end":  1200
+                                      },
+                                      {
+                                          "index":  2,
+                                          "file":  "audio_chunks/6b6383cef460/chunk_0002.mp3",
+                                          "start":  1200,
+                                          "end":  1800
+                                      },
+                                      {
+                                          "index":  3,
+                                          "file":  "audio_chunks/6b6383cef460/chunk_0003.mp3",
+                                          "start":  1800,
+                                          "end":  2400
+                                      },
+                                      {
+                                          "index":  4,
+                                          "file":  "audio_chunks/6b6383cef460/chunk_0004.mp3",
+                                          "start":  2400,
+                                          "end":  2566.146667
+                                      }
+                                  ]
+                   },
+                   {
+                       "video":  "V3_ Unterrichtsstörungen und Aggressionen/2026 04 16_ PKE und PLV Einführung ins Thema/Folienpräsentation für das Selbststudium/Perspektiven auf Aggressionen FW51_V3_2026_Teil 2.mp4",
+                       "duration_seconds":  2666.761667,
+                       "chunks":  [
+                                      {
+                                          "index":  0,
+                                          "file":  "audio_chunks/301b307fa901/chunk_0000.mp3",
+                                          "start":  0,
+                                          "end":  600
+                                      },
+                                      {
+                                          "index":  1,
+                                          "file":  "audio_chunks/301b307fa901/chunk_0001.mp3",
+                                          "start":  600,
+                                          "end":  1200
+                                      },
+                                      {
+                                          "index":  2,
+                                          "file":  "audio_chunks/301b307fa901/chunk_0002.mp3",
+                                          "start":  1200,
+                                          "end":  1800
+                                      },
+                                      {
+                                          "index":  3,
+                                          "file":  "audio_chunks/301b307fa901/chunk_0003.mp3",
+                                          "start":  1800,
+                                          "end":  2400
+                                      },
+                                      {
+                                          "index":  4,
+                                          "file":  "audio_chunks/301b307fa901/chunk_0004.mp3",
+                                          "start":  2400,
+                                          "end":  2666.761667
+                                      }
+                                  ]
+                   }
+               ]
+}

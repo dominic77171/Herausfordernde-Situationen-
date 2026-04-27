@@ -9,7 +9,7 @@ Transcribe all MP4 lecture videos and commit the generated transcript artifacts.
 ## Steps
 
 1. Ensure `OPENAI_API_KEY` is available in the environment.
-2. Ensure `ffmpeg` and `ffprobe` are installed.
+2. Use the prebuilt MP3 chunks from `audio_chunks_manifest.json`; do not install or require `ffmpeg` unless the chunks are missing.
 3. Run:
 
    ```bash

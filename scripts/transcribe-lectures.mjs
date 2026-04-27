@@ -190,6 +190,34 @@ async function segmentAudio(video, workDir, segmentSeconds) {
   return chunks;
 }
 
+async function findPrebuiltChunks(root, video) {
+  const manifestPath = path.join(root, "audio_chunks_manifest.json");
+  if (!await pathExists(manifestPath)) return null;
+  const manifest = JSON.parse(await fsp.readFile(manifestPath, "utf8"));
+  const relVideo = path.relative(root, video).replace(/\\/g, "/");
+  const entry = (manifest.videos || []).find((v) => v.video === relVideo);
+  if (!entry) return null;
+  const chunks = [];
+  for (const chunk of entry.chunks || []) {
+    const file = path.join(root, chunk.file);
+    if (!await pathExists(file)) throw new Error(`Missing prebuilt audio chunk: ${chunk.file}`);
+    const stat = await fsp.stat(file);
+    if (stat.size > AUDIO_LIMIT_BYTES) {
+      throw new Error(`Prebuilt audio chunk is too large for OpenAI upload: ${chunk.file} (${stat.size} bytes)`);
+    }
+    chunks.push({
+      file,
+      index: chunk.index,
+      start: chunk.start,
+      end: chunk.end
+    });
+  }
+  return {
+    duration: entry.duration_seconds,
+    chunks: chunks.sort((a, b) => a.index - b.index)
+  };
+}
+
 async function transcribeChunk(chunk, args) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) throw new Error("OPENAI_API_KEY is not set");
@@ -318,8 +346,11 @@ async function main() {
     return;
   }
   if (!process.env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY is required for transcription");
-  await run("ffmpeg", ["-version"]);
-  await run("ffprobe", ["-version"]);
+  const hasPrebuiltChunks = await pathExists(path.join(root, "audio_chunks_manifest.json"));
+  if (!hasPrebuiltChunks) {
+    await run("ffmpeg", ["-version"]);
+    await run("ffprobe", ["-version"]);
+  }
 
   const index = {
     created_at: new Date().toISOString(),
@@ -341,21 +372,22 @@ async function main() {
     }
     try {
       console.log(`[video ${i + 1}/${plan.length}] ${path.relative(root, item.video)}`);
-      const duration = await ffprobeDuration(item.video);
+      const prebuilt = await findPrebuiltChunks(root, item.video);
+      const duration = prebuilt?.duration ?? await ffprobeDuration(item.video);
       const workDir = path.join(root, ".transcribe_work", createHash("sha1").update(item.video).digest("hex").slice(0, 12));
-      await fsp.rm(workDir, { recursive: true, force: true });
-      const audioChunks = await segmentAudio(item.video, workDir, args.segmentSeconds);
+      if (!prebuilt) await fsp.rm(workDir, { recursive: true, force: true });
+      const audioChunks = prebuilt?.chunks ?? await segmentAudio(item.video, workDir, args.segmentSeconds);
       const chunks = [];
       for (const chunk of audioChunks) {
-        const start = chunk.index * args.segmentSeconds;
-        const end = Math.min(duration, (chunk.index + 1) * args.segmentSeconds);
+        const start = chunk.start ?? chunk.index * args.segmentSeconds;
+        const end = chunk.end ?? Math.min(duration, (chunk.index + 1) * args.segmentSeconds);
         console.log(`  [chunk ${chunk.index + 1}/${audioChunks.length}] ${formatTime(start)}-${formatTime(end)}`);
         const text = await transcribeChunk(chunk, args);
         chunks.push({ index: chunk.index, start, end, text });
-        await fsp.writeFile(`${chunk.file}.txt`, text, "utf8");
+        if (!prebuilt) await fsp.writeFile(`${chunk.file}.txt`, text, "utf8");
       }
       const written = await writeTranscript(item.video, root, item.relatedSlides, chunks, duration, args);
-      await fsp.rm(workDir, { recursive: true, force: true });
+      if (!prebuilt) await fsp.rm(workDir, { recursive: true, force: true });
       index.done += 1;
       index.transcripts.push({
         video: path.relative(root, item.video),

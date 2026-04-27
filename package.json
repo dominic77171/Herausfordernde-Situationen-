@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "transcribe:dry-run": "node scripts/transcribe-lectures.mjs --dry-run",
-    "transcribe": "node scripts/transcribe-lectures.mjs"
+    "transcribe": "node scripts/transcribe-lectures.mjs",
+    "prepare-audio-chunks": "node scripts/prepare-audio-chunks.mjs"
   },
   "engines": {
     "node": ">=20"

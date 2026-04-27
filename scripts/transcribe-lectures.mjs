@@ -193,7 +193,8 @@ async function segmentAudio(video, workDir, segmentSeconds) {
 async function findPrebuiltChunks(root, video) {
   const manifestPath = path.join(root, "audio_chunks_manifest.json");
   if (!await pathExists(manifestPath)) return null;
-  const manifest = JSON.parse(await fsp.readFile(manifestPath, "utf8"));
+  const manifestText = (await fsp.readFile(manifestPath, "utf8")).replace(/^\uFEFF/, "");
+  const manifest = JSON.parse(manifestText);
   const relVideo = path.relative(root, video).replace(/\\/g, "/");
   const entry = (manifest.videos || []).find((v) => v.video === relVideo);
   if (!entry) return null;

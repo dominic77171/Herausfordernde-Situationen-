@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "verify-audio": "node scripts/verify-audio-chunks.mjs",
     "transcribe:dry-run": "node scripts/transcribe-lectures.mjs --dry-run",
     "transcribe": "node scripts/transcribe-lectures.mjs",
     "prepare-audio-chunks": "node scripts/prepare-audio-chunks.mjs"
